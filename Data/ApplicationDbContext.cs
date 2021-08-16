@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Rocky.Models;
 
 namespace Rocky.Data
 {
@@ -13,5 +14,7 @@ namespace Rocky.Data
         {
 
         }
+
+        public DbSet<Category> Category { get; set; }
     }
 }
