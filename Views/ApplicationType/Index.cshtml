@@ -30,7 +30,10 @@
                 {
                     <tr>
                         <td width="50%">@item.Name</td>
-                        <td></td>
+                        <td>
+                            <a class="btn btn-primary text-right text-whit mx-2" asp-route-Id="@item.Id" asp-controller="ApplicationType" asp-action="Edit">Edit</a>
+                            <a class="btn btn-danger text-right text-white mx-2" asp-route-Id="@item.Id" asp-controller="ApplicationType" asp-action="Delete">Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>
