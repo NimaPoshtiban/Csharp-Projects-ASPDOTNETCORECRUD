@@ -105,8 +105,6 @@ namespace Rocky.Controllers
             {
                 return NotFound();
             }
-            // server side validation
-
             _db.Category.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
