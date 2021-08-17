@@ -33,7 +33,12 @@
                     <tr>
                         <td width="50%">@item.Name</td>
                         <td width="30%">@item.DisplayOrder</td>
-                        <td></td>
+                        <td class="text-center">
+                            <div class="w-75 btn-group" role="group">
+                                <a class="btn btn-primary text-right text-whit mx-2"  asp-route-Id="@item.Id" asp-controller="Category" asp-action="Edit">Edit</a>
+                                <a class="btn btn-danger text-right text-white mx-2" asp-route-Id="@item.Id"  asp-controller="Category" asp-action="Delete">Delete</a>
+                            </div>
+                        </td>
                     </tr>
                 }
             </tbody>
